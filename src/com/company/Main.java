@@ -12,12 +12,10 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter track length: ");
-        int trackLength = scanner.nextInt();
-        scanner.skip("\n");
+        int trackLength = Integer.parseInt(scanner.nextLine());
 
         System.out.print("Enter snail amount: ");
-        int snailParticipantAmount = scanner.nextInt();
-        scanner.skip("\n");
+        int snailParticipantAmount = Integer.parseInt(scanner.nextLine());
 
         Race mainRace = new Race(trackLength);
 
